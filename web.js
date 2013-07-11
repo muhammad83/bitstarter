@@ -6,7 +6,7 @@ var app = express.createServer(express.logger());
 //  response.send('Hello World 2!');
 //});
 
-fs.readFile('/index.html', function (err, data) {
+fs.readFile('index.html', function (err, data) {
   if (err) throw err;
   var buf = new Buffer(data);
   response.send(buf.toString());
